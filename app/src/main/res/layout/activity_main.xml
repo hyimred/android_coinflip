@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/imgBox">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/imgCoin"
+            android:background="@drawable/heads"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/btnBox"
+        android:layout_below="@+id/imgBox">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/btnFej"
+            android:text="Fej"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/btnIras"
+            android:text="Írás"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/outBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBox"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textOutWin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Win: 0"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textOutLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lose: 0"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
